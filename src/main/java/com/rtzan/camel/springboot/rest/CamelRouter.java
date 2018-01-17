@@ -1,4 +1,4 @@
-package org.apache.camel.example.springboot;
+package com.rtzan.camel.springboot.rest;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.rest.RestBindingMode;

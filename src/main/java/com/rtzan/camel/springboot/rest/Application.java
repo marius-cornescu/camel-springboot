@@ -1,4 +1,4 @@
-package org.apache.camel.example.springboot;
+package com.rtzan.camel.springboot.rest;
 
 import org.apache.camel.component.servlet.CamelHttpTransportServlet;
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package org.apache.camel.example.springboot;
+package com.rtzan.camel.springboot.rest;
 
 import java.util.Collection;
 import java.util.Map;

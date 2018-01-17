@@ -8,12 +8,10 @@
     <artifactId>springboot-rest</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
-    <name>Camel :: Example :: Spring Boot with REST DSL and Swagger</name>
-    <description>An example showing Camel REST DSL and Swagger with Spring Boot</description>
+    <name>Camel :: Example :: Spring Boot with REST DSL</name>
+    <description>An example showing Camel REST DSL with Spring Boot</description>
 
     <properties>
-        <category>Rest</category>
-
         <version.spring-boot>1.5.9.RELEASE</version.spring-boot>
         <version.camel>2.20.0</version.camel>
         <version.cdi>2.0</version.cdi>
@@ -49,7 +47,7 @@
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-spring-boot-dependencies</artifactId>
-                <version>${project.version}</version>
+                <version>${version.camel}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -61,6 +59,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>${version.spring-boot}</version>
         </dependency>
 
         <!-- Camel -->
@@ -99,12 +98,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <version>${version.camel}</version>
+            <version>${version.spring-boot}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-test</artifactId>
+            <version>${version.camel}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-test-spring</artifactId>
             <version>${version.camel}</version>
             <scope>test</scope>
         </dependency>
