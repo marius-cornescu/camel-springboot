@@ -12,7 +12,7 @@
     <description>An example showing Camel REST DSL with Spring Boot</description>
 
     <properties>
-        <version.spring-boot>1.5.9.RELEASE</version.spring-boot>
+        <version.spring-boot>2.5.12</version.spring-boot>
         <version.camel>2.20.0</version.camel>
         <version.cdi>2.0</version.cdi>
         <version.weld>3.0.0.Final</version.weld>
